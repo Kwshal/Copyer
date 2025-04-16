@@ -46,7 +46,8 @@ onValue(ref(db, "clipboard"), (snapshot) => {
 
 // Register service worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register("sw.js").then(() => {
+  navigator.serviceWorker.register("/Copyer/sw.js")
+  .then(() => {
     console.log("Service Worker registered");
   });
 }
