@@ -4,16 +4,16 @@ self.addEventListener("install", (e) => {
      e.waitUntil(
           caches.open(CACHE_NAME).then((cache) => {
                return cache.addAll([
-                    "https://www.github.com/Kwshal/Copyer/",
-                    "https://www.github.com/Kwshal/Copyer/index.html",
-                    "https://www.github.com/Kwshal/Copyer/manifest.json",
-                    "https://www.github.com/Kwshal/Copyer/sw.js",
-                    "https://www.github.com/Kwshal/Copyer/icon-256.png"
+                    "https://Kwshal.github.io/Copyer/",
+                    "https://Kwshal.github.io/Copyer/index.html",
+                    "https://Kwshal.github.io/Copyer/manifest.json",
+                    "https://Kwshal.github.io/Copyer/sw.js",
+                    "https://Kwshal.github.io/Copyer/image/icon-256.png"
                ]);
           })
      );
 });
-console.log("url changed a");
+console.log("correct path gor icon");
 
 self.addEventListener("activate", (e) => {
      e.waitUntil(
