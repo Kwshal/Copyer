@@ -7,12 +7,27 @@
      <link rel="manifest" href="/Copyer/manifest.json" />
      <link rel="icon" href="icon-256.png" type="image/png" sizes="16x16" />
      <link rel="stylesheet" href="styles.css" />
-     
+
      <title>ClipSync</title>
 </head>
 
 <body>
      <textarea id="clipboard" placeholder="Paste or type here..."></textarea>
      <script type="module" src="script.js"></script>
+     <script>
+          // updation
+          console.log("a");
+     </script>
+     <script>
+          // Register service worker
+          if ('serviceWorker' in navigator) {
+               navigator.serviceWorker.register("/Copyer/sw.js")
+                    .then(() => {
+                         console.log("Service Worker registered");
+                    });
+          }
+
+     </script>
 </body>
+
 </html>

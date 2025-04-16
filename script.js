@@ -44,10 +44,3 @@ onValue(ref(db, "clipboard"), (snapshot) => {
   textarea.value = data?.text || "";
 });
 
-// Register service worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register("/Copyer/sw.js")
-  .then(() => {
-    console.log("Service Worker registered");
-  });
-}
