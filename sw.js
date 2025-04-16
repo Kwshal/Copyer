@@ -4,11 +4,11 @@ self.addEventListener("install", (e) => {
      e.waitUntil(
           caches.open(CACHE_NAME).then((cache) => {
                return cache.addAll([
-                    "https://username.github.io/Copyer/",
-                    "https://username.github.io/Copyer/index.html",
-                    "https://username.github.io/Copyer/manifest.json",
-                    "https://username.github.io/Copyer/sw.js",
-                    "https://username.github.io/Copyer/icon-256.png"
+                    "https://Kwshal.github.io/Copyer/",
+                    "https://Kwshal.github.io/Copyer/index.html",
+                    "https://Kwshal.github.io/Copyer/manifest.json",
+                    "https://Kwshal.github.io/Copyer/sw.js",
+                    "https://Kwshal.github.io/Copyer/icon-256.png"
                ]);
           })
      );
