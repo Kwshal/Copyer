@@ -8,9 +8,7 @@ self.addEventListener("install", (e) => {
         "/Copyer/index.html",
         "/Copyer/manifest.json",
         "/Copyer/sw.js",
-        "/Copyer/icon192.png",
-        "/Copyer/icon512.png"
-      ]);
+        "/Copyer/icon-256.png"      ]);
     })
   );
 });
