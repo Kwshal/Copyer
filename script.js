@@ -35,7 +35,6 @@ textarea.addEventListener("input", () => {
 
 textarea.addEventListener("focus", () => {
   textarea.select();
-  navigator.clipboard.writeText(textarea.value);
 });
 
 // Listen for clipboard updates
